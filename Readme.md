@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Яна Паничева](https://up.htmlacademy.ru/htmlcss/18/user/325421).
-* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/18/user/29644).
+* Наставник: [Ирина :) Малиновская](https://up.htmlacademy.ru/htmlcss/18/user/29644).
 
 ---
 
