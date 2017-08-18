@@ -1,0 +1,21 @@
+body{font-size:14px;
+line-height:26px;
+color:333333;
+font-weight:normal;
+font-family:"PTSans";
+}
+
+.appointment h2{font-size:21px;
+line-height:26px;
+color:white;
+font-weight:normal;
+font-family:"PTSans" ;
+}
+
+
+.results h3 {font-size:21px;
+line-height:26px;
+color:black ;
+font-weight:normal ;
+font-family: "PTSans";
+}
