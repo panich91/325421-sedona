@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="#">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -23,7 +25,7 @@
     <main>
       <section class="reasons-and-feature">
         <h2 class="visually-hidden">Причины посетить Седону</h2>
-        <b>Седона-небольшой городок в Аризоне заслуживающий большего!</b>
+        <p><b>Седона-небольшой городок в Аризоне заслуживающий большего!</b></p>
         <p>Рассмотрим 5 причин, по которым Седона круче , чем Гранд Каньон</p>
         <ul class="reasons-list">
           <li class="reasons-pic-right">
@@ -80,15 +82,13 @@
 
       
       <section class="appointment">
-        <h2>Поиск гостинницы в Седоне</h2>
-        <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      
-    
-        <h2>Поиск гостинницы в Седоне</h2>
+        <h2 class="visually-hidden">Поиск гостинницы</h2>
+        <p><b>Заинтересовались?</b></p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button button-search" type="button">Поиск гостинницы в Седоне</button>
         <form class="appointment-form" method="get" action="https://echo.htmlacademy.ru">
-          <label>Дата заезда: <input type="date" name="date-entry"></label>
-          <label>Дата выезда: <input type="date" name="date-exit"></label>
+          <label>Дата заезда: <input type="text" name="date-entry" placeholder="27 апреля 2017"></label>
+          <label>Дата выезда: <input type="text" name="date-exit" placeholder="4 июля 2017"></label>
           
           <label>Взрослые: <input type="number" name="adult" placeholder="2"></label>
           <button class="button" type="submit"><span class="visually-hidden">Больше</span>+</button>
@@ -96,10 +96,10 @@
           <label>Дети: <input type="number" name="children" placeholder="0"></label>
           <button class="button" type="submit"><span class="visually-hidden">Больше</span>+</button>
           <button class="button" type="submit"><span class="visually-hidden">Меньше</span>-</button>
-          <button class="button" type="submit">Найти</button>
+          <button class="button button-selection" type="submit">Найти</button>
         </form>
 
-        <h2>Карта проезда</h2>
+        <h2 class="visually-hidden">Карта проезда</h2>
         <figure><img src="img/map.jpg" width="1200" height="593" alt="Карта проезда"></figure>
       </section>
     </main>
