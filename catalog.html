@@ -27,54 +27,68 @@
       <section class="filter">
           <h2 class="visually-hidden">Фильтр отелей</h2>
           <form class="form-filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-                <legend>Инфраструктура:</legend>
-                <ul>
-                    <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool">Бассейн</label></li>
-                    <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка</label></li>
-                    <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi">Wi-Fi</label></li>
-                </ul>
-            </fieldset>
+            <div class="container">
+              <div class="form-container">
+              <fieldset>
+                  <legend>Инфраструктура:</legend>
+                  <ul>
+                      <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool">Бассейн</label></li>
+                      <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка</label></li>
+                      <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi">Wi-Fi</label></li>
+                  </ul>
+              </fieldset>
 
-            <fieldset>
-                <legend>Тип жилья:</legend>
-                <ul>
-                    <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostelry">Гостинница</label></li>
-                    <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostel">Мотель</label></li>
-                    <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments">Апартаменты</label></li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Стоимость в сутки(Р):</legend>
-            <input type="range" min="0" max="3000" step="1" value="2000">
-            </fieldset>
-            <button type="submit" class="filter-button button">Показать</button>
-          </form>
+              <fieldset>
+                  <legend>Тип жилья:</legend>
+                  <ul>
+                      <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostelry">Гостинница</label></li>
+                      <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostel">Мотель</label></li>
+                      <li><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments">Апартаменты</label></li>
+                  </ul>
+              </fieldset>
+              <div class="form-filter-wrapper">
+                <fieldset>
+                    <legend>Стоимость в сутки(Р):</legend>
+                <input type="range" min="0" max="3000" step="1" value="2000">
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+              </div>
+             </div>
+           </div>
+         </form>
         </section>
 
         <section class="sorting">
+          <div class="container">
+            <div class="sorting-container">
             <p class="sorting-info">Найдено:3</p>
             <h2>Сортировка</h2>
+            
             <ul class="sorting-list">
                 <li><span>По цене</span></li>
                 <li><span>По типу</span></li>
                 <li><span>По рейтингу</span></li>
             </ul>
-        </section>
+            </div>
+           </div>
+         </section>
 
         <section class="results">
+          <div class="container">
             <ul class="results-list">
                 <li>
-                    <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara resort &amp; Spa">
+                    <figure><img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara resort &amp; Spa"></figure>
+                    
                     <a class="results-name" href="#"><h3>Amara resort &amp; Spa</h3></a>
                     <p>Гостинница</p>
                     <p>От 4000 р.</p>
                     <a class="button button-results-info" href="#">Подробнее</a>
                     <a class="button button-results-reserve" href="#">Забронировать</a>
+                    
                     <span class="results-rating">Рейтинг:8,5</span>
                 </li>
                 <li>
-                   <img src="img/desert-hotel.jpg" width="135" height="90" alt="Desert quail inn">
+                   <figure><img src="img/desert-hotel.jpg" width="135" height="90" alt="Desert quail inn"></figure>
                     <a class="results-name" href="#"><h3>Desert quail inn</h3></a>
                     <p>Мотель</p>
                     <p>От 3000 р.</p>
@@ -83,7 +97,7 @@
                     <span class="results-rating">Рейтинг:8,9</span>   
                 </li>
                 <li>
-                   <img src="img/villas-hotel.jpg" width="135" height="90" alt="Villas at poco diablo">
+                  <figure><img src="img/villas-hotel.jpg" width="135" height="90" alt="Villas at poco diablo"></figure>
                     <a class="results-name" href="#"><h3>Villas at poco diablo</h3></a>
                     <p>Апартаменты</p>
                     <p>От 2000 р.</p>
@@ -91,26 +105,28 @@
                     <a class="button button-results-reserve" href="#">Забронировать</a>
                     <span class="results-rating"> Рейтинг:9,2</span> 
                 </li>
-            </ul>   
+            </ul> 
+          </div>  
         </section>
     </main>
 
     <footer class="main-footer">
-      <div class="footer-contact"><a href="#">#Visitsedona</a></div>
+      <div class="main-footer-wrapper">
+        <div class="footer-contact"><a href="#">#Visitsedona</a></div>
       
-      <div class="footer-button">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Vk</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
-        </ul>
-      </div>
+        <div class="footer-button">
+          <ul>
+            <li><a class="social-button" href="#">Twitter</a></li>
+            <li><a class="social-button" href="#">Vk</a></li>
+            <li><a class="social-button" href="#">Youtube</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-copyright">
-        <p>Wessite by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/368x153" width="50" height="50" alt="HTMLACADEMY"></a></p>
+        <div class="footer-copyright">
+          <p>Wessite by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/368x153" width="50" height="50" alt="HTMLACADEMY"></a></p>
+        </div>
+        </div>
+       </footer>  
       </div>
-    </footer>
-    </div>
-        
-  </body>
+    </body>
 </html>
